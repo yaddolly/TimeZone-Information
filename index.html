@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Timezone Information</title>
+  </head>
+  <body>
+    <header>
+      <h1>TimeZone API</h1>
+    </header>
+    <main>
+      <div id="currentTimeZone">
+        <h1 class="heading">Your Current Time Zone</h1>
+        <section class="display">
+          <div class="name flex">
+            <p>Name of Time Zone :</p>
+            <p class="value"></p>
+          </div>
+          <div class="coord">
+            <div class="latitude flex">
+              <p>Lat :</p>
+              <p class="value"></p>
+            </div>
+            <div class="longitude flex">
+              <p>Long :</p>
+              <p class="value"></p>
+            </div>
+          </div>
+          <div class="offsetSTD flex">
+            <p>Offset STD :</p>
+            <p class="value"></p>
+          </div>
+          <div class="offsetSTDSeconds flex">
+            <p>Offset STD Seconds :</p>
+            <p class="value"></p>
+          </div>
+          <div class="offsetDST flex">
+            <p>Offset DST :</p>
+            <p class="value"></p>
+          </div>
+          <div class="offsetDSTSeconds flex">
+            <p>Offset DST Seconds :</p>
+            <p class="value"></p>
+          </div>
+          <div class="country flex">
+            <p>Country :</p>
+            <p class="value"></p>
+          </div>
+          <div class="postcode flex">
+            <p>Postcode :</p>
+            <p class="value"></p>
+          </div>
+          <div class="city flex">
+            <p>City :</p>
+            <p class="value"></p>
+          </div>
+        </section>
+      </div>
+      <div id="searchTimeZone" style="border: 2px solid red;">
+        <h1 class="heading">Enter Address</h1>
+        <form class="form">
+          <input type="text" name="address" placeholder="Address" required />
+          <br />
+          <button>Submit</button>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
